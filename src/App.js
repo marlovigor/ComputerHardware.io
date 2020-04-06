@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Options from './Components/Options';
+import Features from './Features'
 import Hardware from './Components/Hardware';
 import Total from './Components/Total';
 import Summary from './Components/Summary';
-import Features from './Components/Features';
+import Feature from './Components/Feature';
 
 
 // Normalizes string as a slug - a string that is safe to use
@@ -38,9 +39,8 @@ class App extends Component {
         name: '15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs',
         cost: 1500
       }
-    }
-  };
-
+    },
+  }
   // UPDATE CART
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
@@ -112,7 +112,7 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            <Features
+            <Feature
             features={features}
             />
           </form>

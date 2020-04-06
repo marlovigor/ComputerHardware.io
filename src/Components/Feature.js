@@ -1,7 +1,7 @@
 import React from "react"
 
 
-class Features extends React.Component {
+class Feature extends React.Component {
     render(){
         return(
             <div className="features_Styles">
@@ -11,4 +11,4 @@ class Features extends React.Component {
     }    
 }
 
-export default Features
+export default Feature
